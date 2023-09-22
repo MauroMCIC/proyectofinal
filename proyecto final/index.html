@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaprichosaS Lenceria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- div contenedor de todo -->
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Caprichosas</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <!-- barra lateral (nav) -->
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo">Caprichosas Lenceria </h1>
+                <img id= "caprilogo" src="./img/logoimagen.jpeg" alt="">
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="damas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Damas</button>
+                    </li>
+                    <li>
+                        <button id="caballeros" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Caballeros</button>
+                    </li>
+                    <li>
+                        <button id="niños" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Niños</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <!-- Contacto con el programador -->
+                <p class="texto-footer">© 2023 MauroC(Tec. en Informatica)</p>
+                <a href="https://650dcd2e51dc69144bf8b453--jolly-pudding-42fa3f.netlify.app/" target="_blank"><p class="texto-footer">Sobre mi:</p></a>
+                <pclass="texto-footer"><a href=""></a> </p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+        </main>
+    </div>
+<!-- Espacio para contactartarnos-->
+    <footer class="contacto">
+        <div class="card">
+            <div class="card-header">
+              Para comunicarte con nosotros:
+              <a class="texto-footer" href="https://chat.whatsapp.com/EjepD31Yavz4DPDKwYOUDh" target="_blank"><i class="bi bi-whatsapp" ></i></a>
+              <a class="texto-footer" href="https://www.facebook.com/profile.php?id=100068599097724" target="_blank"><i class="bi bi-facebook" ></i></a>
+              <a class="texto-footer" href="https://www.instagram.com/invites/contact/?i=1whgmd2n77zza" target="_blank"><i class="bi bi-instagram" ></i></a>
+            </div>
+          </div>
+    </footer>
+
+
+
+<!-- archivos linkeados -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
